@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" th:fragment="parent(content, title)" class="Dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link data-th-href="@{'/css/output.css'}" rel="stylesheet">
+    <title data-th-replace="${title}">Developer Portfolio</title>
+</head>
+<body class="dark:bg-gray-900">
+    <div>
+        <section data-th-replace="${content}"></section>
+    </div>
+</body>
+</html>
